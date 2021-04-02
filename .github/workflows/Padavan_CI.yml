@@ -74,7 +74,7 @@ jobs:
 ##          - build_variant: "mt7621-usb-1"
 ##            targets: "A3004NS MSG1500 WR1200JS E8820V2 NEWIFI3 RT-AC1200GU"
           - build_variant: "mt7621-usb-2"
-            targets: "MI-R3G
+            targets: "MI-R3G"
 ##          - build_variant: "mt7628"
 ##            targets: "360P2 HC5861B HC5761A HC5661A MI-NANO MZ-R13 MZ-R13P"
     steps:
