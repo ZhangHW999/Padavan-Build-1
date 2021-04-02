@@ -63,7 +63,7 @@ jobs:
     if: github.event.repository.owner.id == github.event.sender.id  # 自己点的 Star
     env:
       build_variant: ${{ matrix.build_variant }}
-      targets: ${{ matrix.targets }}
+      targets: ${MI-R3G}
     strategy:
       matrix:
         include:
