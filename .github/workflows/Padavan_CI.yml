@@ -23,7 +23,7 @@ env:
   custom_modify: true                                           # 修改文件
   upload_cowtransfer: true                                      # 上传到奶牛快传
   upload_wetransfer: true                                       # 上传到 WeTransfer
-  src_git: https://github.com/andy-padavan/rt-n56u.git              # 源码地址
+  src_git: https://github.com/ZhangHW999/rt-n56u.git              # 源码地址
   config_dir: /opt/rt-n56u/trunk/configs/templates              # 设备模板目录
   toolchain_dir: /opt/rt-n56u/toolchain-mipsel/toolchain-3.4.x  # 工具链目录
   toolchain_pkg: mipsel-linux-uclibc.tar.xz
@@ -36,6 +36,7 @@ env:
     CONFIG_FIRMWARE_INCLUDE_SCUTCLIENT
     CONFIG_FIRMWARE_INCLUDE_GDUT_DRCOM
     CONFIG_FIRMWARE_INCLUDE_DOGCOM
+  DISABLED_CFG: |
     CONFIG_FIRMWARE_INCLUDE_MINIEAP
     CONFIG_FIRMWARE_INCLUDE_NJIT_CLIENT
     CONFIG_FIRMWARE_INCLUDE_NAPT66
@@ -53,7 +54,7 @@ env:
     CONFIG_FIRMWARE_INCLUDE_FRPC
     CONFIG_FIRMWARE_INCLUDE_FRPS
     CONFIG_FIRMWARE_INCLUDE_TUNSAFE
-  DISABLED_CFG: |
+
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
