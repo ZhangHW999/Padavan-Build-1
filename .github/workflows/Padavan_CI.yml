@@ -28,7 +28,8 @@ env:
   toolchain_dir: /opt/rt-n56u/toolchain-mipsel/toolchain-3.4.x  # 工具链目录
   toolchain_pkg: mipsel-linux-uclibc.tar.xz
   toolchain_url: https://github.com/TurBoTse/padavan-toolchain/releases/download/v1.0
-
+  ENABLED_CFG: |
+    CONFIG_FIRMWARE_INCLUDE_LANG_CN
 
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
@@ -38,7 +39,7 @@ jobs:
     runs-on: ubuntu-20.04
     if: github.event.repository.owner.id == github.event.sender.id  # 自己点的 Star
     env:
-      build_variant: ${{ matrix.build_variant }}
+      build_variant: mt7621-usb-2
       targets: MI-R3G
     strategy:
       matrix:
